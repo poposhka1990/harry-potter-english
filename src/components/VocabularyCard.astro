@@ -1,0 +1,78 @@
+---
+interface Props {
+	word: string;
+	translation: string;
+	example: string;
+	partOfSpeech: string;
+}
+
+const { word, translation, example, partOfSpeech } = Astro.props;
+---
+
+<div class="vocab-card">
+	<div class="word-section">
+		<h3>{word}</h3>
+		<span class="part-of-speech">{partOfSpeech}</span>
+	</div>
+	<p class="translation">{translation}</p>
+	<div class="example">
+		<span>Example:</span>
+		<p>{example}</p>
+	</div>
+</div>
+
+<style>
+	.vocab-card {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		border: 1px solid rgba(var(--accent-light), 0.2);
+		transition: transform 0.2s;
+	}
+
+	.vocab-card:hover {
+		transform: translateY(-2px);
+	}
+
+	.word-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.5rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		margin: 0;
+		color: rgb(var(--accent-light));
+	}
+
+	.part-of-speech {
+		font-size: 0.9rem;
+		color: rgb(var(--accent));
+		background: rgba(var(--accent), 0.1);
+		padding: 0.2rem 0.5rem;
+		border-radius: 0.3rem;
+	}
+
+	.translation {
+		font-size: 1.2rem;
+		margin: 0.5rem 0;
+		color: #ffffff;
+	}
+
+	.example {
+		margin-top: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.example span {
+		color: rgb(var(--accent-light));
+		font-weight: bold;
+	}
+
+	.example p {
+		margin: 0.3rem 0 0 0;
+		font-style: italic;
+	}
+</style>

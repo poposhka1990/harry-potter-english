@@ -1,0 +1,32 @@
+body.dark-theme {
+    background-color: #222;
+    color: #eee;
+}
+body.light-theme {
+    background-color: #eee;
+    color: #222;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+}
+header img {
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin-right: 1rem;
+}
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+}
+main {
+    padding: 2rem;
+}
