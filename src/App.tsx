@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Home from './pages/Home';
+import Index from './pages';
 import Pronunciation from './pages/Pronunciation';
 import Vocabulary from './pages/Vocabulary';
 import Exercises from './pages/Exercises';
@@ -63,7 +63,7 @@ function App() {
 
       <div className="pt-16">
         <Routes>
-          <Route path="/" element={<Home theme={theme} />} />
+          <Route path="/" element={<Index theme={theme} />} />
           <Route path="/pronunciation" element={<Pronunciation />} />
           <Route path="/vocabulary" element={<Vocabulary theme={theme} />} />
           <Route path="/exercises" element={<Exercises />} />
