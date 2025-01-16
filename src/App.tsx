@@ -51,7 +51,7 @@ function App() {
           aria-label="Toggle theme"
         >
           <img 
-            src="/wand.png" 
+            src="https://poposhka1990.github.io/harry-potter-english/src/wand.png" 
             alt="Wand"
           />
         </button>
