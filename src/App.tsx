@@ -51,7 +51,7 @@ function App() {
           aria-label="Toggle theme"
         >
           <img 
-            src="../src/wand.png" 
+            src="./src/wand.png" 
             alt="Wand"
           />
         </button>
