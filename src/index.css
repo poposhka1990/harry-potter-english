@@ -8,8 +8,22 @@
   --accent-dark: 49, 10, 101;
 }
 
+:root[data-theme="dark"] {
+  --bg-primary: 19, 21, 26;
+  --bg-secondary: 255, 255, 255, 0.05;
+  --text-primary: 255, 255, 255;
+  --text-secondary: 224, 204, 250;
+}
+
+:root[data-theme="light"] {
+  --bg-primary: 250, 250, 252;
+  --bg-secondary: 142, 84, 233, 0.1;
+  --text-primary: 23, 23, 23;
+  --text-secondary: 49, 10, 101;
+}
+
 .text-gradient {
-  background: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
+  background: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, rgb(var(--text-primary)) 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400%;
@@ -17,5 +31,55 @@
 }
 
 html {
-  background: #13151a;
+  background: rgb(var(--bg-primary));
+}
+
+.theme-toggle-container {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle img {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(var(--invert-icon));
+}
+
+[data-theme="dark"] .theme-toggle img {
+  --invert-icon: 1;
+}
+
+[data-theme="light"] .theme-toggle img {
+  --invert-icon: 0;
+}
+
+.lumos-text {
+  color: rgb(var(--text-primary));
+  font-weight: 600;
+  font-size: 1rem;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
 }
