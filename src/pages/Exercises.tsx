@@ -5,6 +5,7 @@ export default function Exercises() {
   const [currentWord, setCurrentWord] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [gameFinished, setGameFinished] = useState(false);
 
   const checkAnswer = (translation: string) => {
     if (translation === vocabularyWords[currentWord].translation) {
@@ -13,7 +14,11 @@ export default function Exercises() {
     setShowResult(true);
     setTimeout(() => {
       setShowResult(false);
-      setCurrentWord((prev) => (prev + 1) % vocabularyWords.length);
+      if (currentWord === vocabularyWords.length - 1) {
+        setGameFinished(true);
+      } else {
+        setCurrentWord(currentWord + 1);
+      }
     }, 1500);
   };
 
@@ -31,6 +36,22 @@ export default function Exercises() {
     
     return translations.sort(() => Math.random() - 0.5);
   };
+
+  if (gameFinished) {
+    return (
+      <main className="mx-auto p-4 w-[1000px] max-w-[calc(100%-2rem)] text-[rgb(var(--text-primary))] text-lg leading-relaxed">
+        <div className="bg-[rgb(var(--bg-secondary))] p-8 rounded-2xl text-center">
+          <h2 className="text-4xl font-bold mb-4">Game Finished!</h2>
+          <p className="text-2xl mb-4">Final Score: {score}/{vocabularyWords.length}</p>
+          <p className="text-xl mb-8">
+            {score === vocabularyWords.length 
+              ? "Perfect! You're a vocabulary master!" 
+              : "Good job! Keep practicing to improve your score!"}
+          </p>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="mx-auto p-4 w-[1000px] max-w-[calc(100%-2rem)] text-[rgb(var(--text-primary))] text-lg leading-relaxed">
