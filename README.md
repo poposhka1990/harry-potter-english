@@ -1,12 +1,11 @@
 # Learn English with Harry Potter
 
-An interactive web application designed to help Russian speakers learn English through J.K. Rowling's "Harry Potter and the Philosopher's Stone". The application features parallel text reading, vocabulary exercises, and pronunciation guides.
+An interactive web application designed to help Russian speakers learn English through J.K. Rowling's "Harry Potter and the Philosopher's Stone". The application features parallel text reading, and vocabulary exercises.
 
 ## Features
 
 - **Interactive Reading**: Read the first chapter of Harry Potter with parallel Russian translation
 - **Vocabulary Cards**: Learn new words with context and examples
-- **Pronunciation Guide**: Practice pronunciation with transcriptions
 - **Vocabulary Exercises**: Test your knowledge with interactive exercises
 - **Dark/Light Theme**: Toggle between themes with a magic wand animation
 - **Mobile Responsive**: Fully responsive design with a burger menu for mobile devices
