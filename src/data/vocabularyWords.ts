@@ -79,7 +79,7 @@ export const vocabularyWords = [
   },
   {
     word: "mustache",
-    translation: "дрель",
+    translation: "усы",
     example: "He decided to grow a mustache.",
     partOfSpeech: "существительное"
   },
