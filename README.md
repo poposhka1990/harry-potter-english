@@ -1,54 +1,55 @@
-# Astro Starter Kit: Basics
+# Learn English with Harry Potter
 
-```sh
-npm create astro@latest -- --template basics
+An interactive web application designed to help Russian speakers learn English through J.K. Rowling's "Harry Potter and the Philosopher's Stone". The application features parallel text reading, vocabulary exercises, and pronunciation guides.
+
+## Features
+
+- **Interactive Reading**: Read the first chapter of Harry Potter with parallel Russian translation
+- **Vocabulary Cards**: Learn new words with context and examples
+- **Pronunciation Guide**: Practice pronunciation with transcriptions
+- **Vocabulary Exercises**: Test your knowledge with interactive exercises
+- **Dark/Light Theme**: Toggle between themes with a magic wand animation
+- **Mobile Responsive**: Fully responsive design with a burger menu for mobile devices
+
+## Technology Stack
+
+- **Frontend Framework**: React 18 with TypeScript
+- **Routing**: React Router v6
+- **Styling**: 
+  - Tailwind CSS for utility-first styling
+  - CSS Variables for theming
+- **Build Tool**: Vite
+- **Package Manager**: npm
+
+## Project Structure
+
+```
+/src
+  /components      # Reusable UI components
+  /data           # Static data (text, vocabulary, pronunciation)
+  /pages          # Main page components
+  App.tsx         # Main application component
+  index.css       # Global styles and theme variables
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Getting Started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Scripts
 
-## 🚀 Project Structure
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
 
-Inside of your Astro project, you'll see the following folders and files:
+## Contributing
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to submit issues and enhancement requests!
