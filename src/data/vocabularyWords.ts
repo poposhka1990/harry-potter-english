@@ -48,12 +48,6 @@ export const vocabularyWords = [
     partOfSpeech: "существительное"
   },
   {
-    word: "nonsense",
-    translation: "глупости",
-    example: "They didn't hold with such nonsense.",
-    partOfSpeech: "существительное"
-  },
-  {
     word: "call",
     translation: "называть, звонить",
     example: "He is called Tom.",
@@ -102,12 +96,6 @@ export const vocabularyWords = [
     partOfSpeech: "словосочетание"
   },
   {
-    word: "nearly twice the usual amount of neck",
-    translation: "шея почти вдвое длиннее, чем обычно",
-    example: "Mrs. Dursley has nearly twice the usual amount of neck.",
-    partOfSpeech: "словосочетание"
-  },
-  {
     word: "to come in useful",
     translation: "пригодиться",
     example: "My guitar skills came in very useful.",
@@ -136,12 +124,6 @@ export const vocabularyWords = [
     translation: "сосед",
     example: "We invited our friends and neighbors.",
     partOfSpeech: "существительное"
-  },
-  {
-    word: "in my opinion",
-    translation: "по моему мнению",
-    example: "In my opinion, it's the greatest book.",
-    partOfSpeech: "словосочетание"
   },
   {
     word: "in my opinion",
