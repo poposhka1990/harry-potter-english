@@ -1,50 +1,38 @@
 export const vocabularyWords = [
   {
-    word: "proud",
-    translation: "гордый",
+    word: "to be proud of",
+    translation: "гордиться",
     example: "The Dursleys were proud of being normal.",
-    partOfSpeech: "adjective"
+    partOfSpeech: "словосочетание"
   },
   {
-    word: "perfectly",
-    translation: "совершенно",
+    word: "perfectly normal",
+    translation: "абсолютно нормальный",
     example: "They were perfectly normal.",
-    partOfSpeech: "adverb"
-  },
-  {
-    word: "normal",
-    translation: "нормальный",
-    example: "The Dursleys considered themselves normal people.",
-    partOfSpeech: "adjective"
+    partOfSpeech: "словосочетание"
   },
   {
     word: "mysterious",
     translation: "загадочный",
     example: "They weren't involved in anything strange or mysterious.",
-    partOfSpeech: "adjective"
+    partOfSpeech: "прилагательное"
   },
   {
     word: "nonsense",
     translation: "глупости",
     example: "They didn't hold with such nonsense.",
-    partOfSpeech: "noun"
-  },
-  {
-    word: "director",
-    translation: "директор",
-    example: "Mr. Dursley was the director of Grunnings.",
-    partOfSpeech: "noun"
+    partOfSpeech: "существительное"
   },
   {
     word: "beefy",
-    translation: "грузный",
+    translation: "тучный",
     example: "He was a big, beefy man.",
-    partOfSpeech: "adjective"
+    partOfSpeech: "прилагательное"
   },
   {
-    word: "spy",
+    word: "to spy on",
     translation: "шпионить",
     example: "She spent her time spying on the neighbors.",
-    partOfSpeech: "verb"
+    partOfSpeech: "глагол"
   }
 ];
